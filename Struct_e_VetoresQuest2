@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct pessoa {
+    char nome[50];
+    int idade;
+    float documento;
+} Pessoa;
+
+void preencher_pessoa(Pessoa *p) {
+    printf("Digite o nome: ");
+    scanf("%s", p->nome);
+    printf("Digite o numero do documento: ");
+    scanf("%f", &p->documento);
+    printf("Digite a idade: ");
+    scanf("%d", &p->idade);
+}
+
+
+void imprimir_pessoa(Pessoa *p) {
+    printf("\n--- Dados da Pessoa ---\n");
+    printf("Nome: %s\n", p->nome);
+    printf("Documento: %.2f\n", p->documento);
+    printf("Idade: %d\n", p->idade);
+    printf("-----------------------\n");
+}
+
+void atualizar_idade(Pessoa *p, int nova_idade) {
+    p->idade = nova_idade;
+}
+
+void encontrar_extremos_idade(Pessoa *vetor, int tamanho) {
+    if (tamanho == 0) {
+        printf("O vetor de pessoas esta vazio.\n");
+        return;
+    }
+
+    int mais_velha_idx = 0;
+    int mais_nova_idx = 0;
+
+    for (int i = 1; i < tamanho; i++) {
+        if (vetor[i].idade > vetor[mais_velha_idx].idade) {
+            mais_velha_idx = i;
+        }
+        if (vetor[i].idade < vetor[mais_nova_idx].idade) {
+            mais_nova_idx = i;
+        }
+    }
+
+    printf("\n--- Extremidades de Idade ---\n");
+    printf("Pessoa mais velha: %s\n", vetor[mais_velha_idx].nome);
+    printf("Pessoa mais nova: %s\n", vetor[mais_nova_idx].nome);
+    printf("-----------------------------\n");
+}
+
+int main() {
+    int num_pessoas = 2;
+    Pessoa pessoas[num_pessoas];
+    
+    for (int i = 0; i < num_pessoas; i++) {
+        printf("Preenchendo dados para a pessoa %d:\n", i + 1);
+        preencher_pessoa(&pessoas[i]);
+    }
+    imprimir_pessoa(&pessoas[0]);
+
+    atualizar_idade(&pessoas[1], 35);
+    printf("\nIdade da segunda pessoa atualizada para 35.\n");
+    imprimir_pessoa(&pessoas[1]);
+
+    encontrar_extremos_idade(pessoas, num_pessoas);
+
+    return 0;
+}
