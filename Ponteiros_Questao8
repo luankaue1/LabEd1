@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int maiorElemento(int *v, int n) {
+    int maior = *v;
+    for (int i = 1; i < n; i++) {
+        if (*(v + i) > maior) {
+            maior = *(v + i);
+        }
+    }
+    return maior;
+}
+int main() {
+    int vet[] = {10, 5, 20, 8, 3};
+    printf("Maior: %d\n", maiorElemento(vet, 5));
+    return 0;
+}
