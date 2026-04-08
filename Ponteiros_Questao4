@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void troca(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+int main() {
+    int val1 = 10, val2 = 20;
+    printf("Antes da troca: val1 = %d, val2 = %d\n", val1, val2);
+    troca(&val1, &val2);
+    printf("Depois da troca: val1 = %d, val2 = %d\n", val1, val2);
+    return 0;
+}
