@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+int n, *vetor;
+printf ("Digite o tamanho do vetor: ");
+if (scanf("%d", &n) != 1 || n <= 0) {
+        printf("Tamanho invalido!\n");
+        return 1;
+    }
+ vetor = (int *) malloc (n * sizeof (int));
+if (vetor == NULL){
+printf("Erro de alocação de memoria! \n");
+return 1;
+}
+printf("Digite os %d elementos do vetor:", n); 
+for (int i=0; i<n; i++) {
+     scanf("%d", &vetor[i]);
+
+}
+printf("Vetor na ordem inversa: \n");
+ for (int i=n-1; i>=0; i--) {
+     printf("%d", vetor[i]);
+}
+printf("\n"); 
+free (vetor);
+return 0;
+}
