@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int *p;
+    int **pp;
+    p = &x;
+    pp = &p;
+    printf("Valor x: %d\n", x);
+    printf("Valor *p: %d\n", *p);
+    printf("Valor **pp: %d\n", **pp);
+    return 0;
+}
