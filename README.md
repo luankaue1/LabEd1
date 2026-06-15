@@ -1,10 +1,5 @@
 <h1 align="center"> 🚀 Laboratório de Estrutura de Dados I </h1>
 
-<div align="center">
-  <img src="https://giphy.com" width="400px" />
-</div>
-
-<p align="center">
   💻 Repositório centralizado com todos os algoritmos, estruturas de dados e desafios práticos desenvolvidos na disciplina.
 </p>
 
