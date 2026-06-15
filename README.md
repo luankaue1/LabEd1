@@ -16,24 +16,23 @@ Este laboratório tem como objetivo principal a implementação prática de conc
 Cada diretório ou repositório listado abaixo contém a implementação e exemplos de aplicação:
 
 
-| Estrutura | Descrição | Status |
-| :--- | :--- | :--- |
-| **Ponteiros e Alocação** | Manipulação direta de memória e ponteiros. | Concluído |
-| **Listas Lineares** | Implementações sequenciais e encadeadas (Simples/Duplas). | Concluído |
-| **Pilhas (Stacks)** | Estruturas LIFO, inversão de dados e expressão pós-fixa. | Concluído |
-| **Filas (Queues)** | Estruturas FIFO, filas estáticas e dinâmicas. | Concluído |
-| **Recursividade** | Resolução de problemas como Torres de Hanói e Fatorial. | Concluído |
-| **Ordenação** | Bubble, Insertion, Selection, Merge e Quick Sort. | Concluído |
-| **Busca** | Algoritmos de busca linear e binária. | Concluído |
+| Estrutura | Descrição |
+| :--- | :--- |
+| **Ponteiros e Alocação** | Manipulação direta de memória e ponteiros. |
+| **Listas Lineares** | Implementações sequenciais e encadeadas (Simples/Duplas). |
+| **Pilhas (Stacks)** | Estruturas LIFO, inversão de dados e expressão pós-fixa. |
+| **Filas (Queues)** | Estruturas FIFO, filas estáticas e dinâmicas. |
+| **Recursividade** | Resolução de problemas como Torres de Hanói e Fatorial. | 
+| **Ordenação** | Bubble, Insertion, Selection, Merge e Quick Sort. |
+| **Busca** | Algoritmos de busca linear e binária. |
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-* **Linguagem:** `[Insira C, C++, Java, etc.]`
-* **Compilador/IDE:** `[Insira GCC, Visual Studio Code, IntelliJ, etc.]`
+* **Linguagem:** `C`
+* **Compilador/IDE:** `GCC, Visual Studio Code`
 * **Versionamento:** `Git` e `GitHub`
 
 ## 👨‍💻 Autor
 
 **Luan Kauê**
-*
